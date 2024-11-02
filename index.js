@@ -43,8 +43,7 @@ const commands = [
                 .addChoices(
                     { name: '15 minutes', value: '15' },
                     { name: '30 minutes', value: '30' },
-                    { name: '1 hour', value: '60' },
-                    { name: '24 hours', value: '1440' }
+                    { name: '1 hour', value: '60' }
                 ))
 ];
 
