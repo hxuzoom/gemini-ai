@@ -13,7 +13,7 @@ A Discord bot powered by Google's Gemini AI that can answer questions and analyz
 
 - `/gemini question:[your question] image:[optional image]` - Ask Gemini AI a question, optionally including an image for analysis
 - `/clear time:[duration]` - Remove bot messages from the specified time period
-  - Available durations: 15 minutes, 30 minutes, 1 hour, 24 hours
+  - Available durations: 15 minutes, 30 minutes, 1 hour.
 
 ## Setup
 
