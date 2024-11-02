@@ -35,7 +35,17 @@ const commands = [
                 .setRequired(false)),
     new SlashCommandBuilder()
         .setName('clear')
-        .setDescription('Clear bot messages from the last hour')
+        .setDescription('Clear bot messages from the specified time period')
+        .addStringOption(option =>
+            option.setName('time')
+                .setDescription('Time period to clear messages from')
+                .setRequired(true)
+                .addChoices(
+                    { name: '15 minutes', value: '15' },
+                    { name: '1 hour', value: '60' },
+                    { name: '5 hours', value: '300' },
+                    { name: '24 hours', value: '1440' }
+                ))
 ];
 
 client.on('guildCreate', async guild => {
